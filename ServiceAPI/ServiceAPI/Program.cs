@@ -29,6 +29,14 @@ namespace ServiceAPI
                 };
                 context.Teachers.Add(t);
                 context.SaveChanges();
+
+                School sc = new School()
+                {
+                    Name = "Principe Umberto",
+                    City = "Catania",
+                };
+                context.Schools.Add(sc);
+                context.SaveChanges();
             }
             //var host = new WebHostBuilder()
             //.UseKestrel()

@@ -18,4 +18,11 @@ namespace ServiceAPI.Dal
         public string Name { get; set; }
         public DateTime DateOfBirth { get; set; }
     }
+
+    public class School
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string City { get; set; }
+    }
 }

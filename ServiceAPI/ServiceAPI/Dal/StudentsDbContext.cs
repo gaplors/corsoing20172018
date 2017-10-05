@@ -8,6 +8,8 @@ namespace ServiceAPI.Dal
 
         public DbSet<Teacher> Teachers { get; set; }
 
+        public DbSet<School> Schools { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder
